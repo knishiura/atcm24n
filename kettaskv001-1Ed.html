@@ -5381,7 +5381,7 @@ if((recflg==1)&(stoknow==2),
 
 Center=[97.59,-8.402];
 Scale=3.457;
-Rbound=[126.351,0];
+Rbound=[120.965,0];
 tmp1=screenbounds();tmp1=[tmp1_2_1,0];
 Center=Center-Rbound+tmp1;
 if((nqu>=1)&(nqu<=4),  //add embed
@@ -5441,21 +5441,27 @@ Letter(pA+[2*mx,10*my],"e","$\displaystyle f'(1)=\lim_{z\to 1}\dfrac{f(z)-f(1)}{
 Letter(pA+[2*mx,11.5*my],"e","$\displaystyle \phantom{f'(1)}=\lim_{z\to 1}\dfrac{(z+1)(z-1)}{z-1}=\lim_{z\to 1}(z+1)=2.$",["Size=1.1"]);
 ); //add embed
 if(nqu==0,
-  Letter([17,7.8],"e","1. Input a number, and click 　　.",["Color=red"]);//T4[15.5,7.8]
-  Letter([38,7.8],"e","OK",["Color=green"]);
+   Letter([17,7.8],"e","1. Input a number, and click the green 'OK'.",["Color=red"]);
+   Letter([17,4.8],"e","2. Click 'OK' again to start.",["Color=red"]);
+//  Letter([17,7.8],"e","1. Input a number, and click 　　.",["Color=red"]);//T4[15.5,7.8]
+//  Letter([38,7.8],"e","OK",["Color=green"]);
   
-  Letter([17,4.8],"e","2. Click ",["Color=red"]);//T4[15.5,7.8]
-  Letter([23.5,4.8],"e","OK",["Color=green"]);
-  Letter([26.9,4.8],"e","again to start.",["Color=red"]); 
+//  Letter([17,4.8],"e","2. Click ",["Color=red"]);//T4[15.5,7.8]
+//  Letter([23.5,4.8],"e","OK",["Color=green"]);
+//  Letter([26.9,4.8],"e","again to start.",["Color=red"]); 
   
-//  Letter([17,4.8],"e","2. Click OK again to start.",["Color=red"]);
+////  Letter([17,4.8],"e","2. Click OK again to start.",["Color=red"]);
 );
 if(nqu==1,
-  Letter([17,7.8],"e","3. Click ",["Color=red"]);//T4[15.5,7.8]
-  Letter([23.5,7.8],"e","Nxt",["Color=green"]);
-  Letter([27,7.8],"e","to display [1]=?.",["Color=red"]);
+   Letter([17,7.8],"e","3. Click the green 'Nxt' to display [1]=?.",["Color=red"]);
+//  Letter([17,7.8],"e","3. Click ",["Color=red"]);//T4[15.5,7.8]
+//  Letter([23.5,7.8],"e","Nxt",["Color=green"]);
+//  Letter([27,7.8],"e","to display [1]=?.",["Color=red"]);
 );
-
+if(nqu==2,
+   Letter([17,7.8],"e","4. Enter the answer, and click the light blue 'OK'.",["Color=red"]);
+   Letter([17,4.8],"e","5. Click the green 'Nxt' to display [2]=?.",["Color=red"]);
+);
 Windispg();
 ;
 
